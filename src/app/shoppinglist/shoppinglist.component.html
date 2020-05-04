@@ -1,0 +1,14 @@
+<p>shoppinglist works!</p>
+<input type="text" [(ngModel)]="msg">
+<p>{{msg}}</p>
+<button (click)="goto()" [disabled]="msg.length===0">Submit</button>
+<ul>
+    <li *ngFor="let item of items;let i=index">{{item}}{{i}}</li>
+</ul>
+<button (click)="toggle()">Display Details</button>
+<p >this is my secret password</p>
+<ul>
+    <li *ngFor="let arr of array;let i=index" [ngStyle]="{'background-color':i>3? 'blue':'white' }">
+       {{arr}} 
+    </li>
+</ul>

@@ -1,0 +1,18 @@
+<input type="text" [(ngModel)]="textentered" >
+<select [(ngModel)]="descex">
+    <option>{{'hgdhgfhgfhg'}}</option>
+    <option>{{'gfsghsdhgsdhjhdfjkfdufdyuseuyaew'}}</option>
+</select>
+
+
+
+
+<button type="button" class="btn btn-success" (click)="addEx()">ADD</button>
+
+<ul *ngFor="let ex of data">
+    <li >{{ex.name}}</li>
+    <li>{{ex.description}}</li>
+</ul>
+
+
+
